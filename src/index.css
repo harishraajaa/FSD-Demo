@@ -1,0 +1,44 @@
+.login-wrapper{
+  margin:20px auto 20px auto;
+  width: 35%;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.p-10{
+  padding: 10px;
+}
+
+.mr-10{
+  margin-right: 10px;
+}
+
+.non-link{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.blogs-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blogs-children{
+  margin: 10px auto 10px auto;
+}
+
+.font-size-smaller{
+  font-size: smaller;
+}
+
+.flex{
+  display: flex;
+}
+
+.space-between{
+  justify-content: space-between;
+}

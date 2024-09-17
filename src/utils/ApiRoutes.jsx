@@ -1,0 +1,57 @@
+const ApiRoutes = {
+    LOGIN:{
+        path:'/users/login',
+        authenticate:false
+    },
+    SIGNUP:{
+        path:'/users/createUser',
+        authenticate:false
+    },
+    GET_ALL_APPROVED_BLOGS:{
+        path:'/blogs/getAllApprovedBlogs',
+        authenticate:true
+    },
+    GET_ALL_BLOGS:{
+        path:'/blogs/getAllBlogs',
+        authenticate:true
+    },
+    GET_BLOGS_BY_USER_ID:{
+        path:'/blogs/getBlogsByUserId',
+        authenticate:true
+    },
+    CREATE_BLOGS:{
+        path:'/blogs/createBlog',
+        authenticate:true
+    },
+    GET_BLOG_BY_ID:{
+        path:'/blogs/getBlogById',
+        authenticate:true
+    },
+    UPDATE_STATUS:{
+        path:'/blogs/updateStatus',
+        authenticate:true
+    },
+    UPDATE_LIKES:{
+        path:'/blogs/updateLikes',
+        authenticate:true
+    },
+    GET_ALL_USERS:{
+        path:'/users/getAllUsers',
+        authenticate:true
+    },
+    GET_RESET_LINK:{
+        path:'/users/forgetPassword',
+        authenticate:false
+    },
+    PASSWORD_RESET:{
+        path:'/users/resetpassword',
+        authenticate:false
+    },
+    ACTIVATE_USER:{
+        path:'/users/activateUser',
+        authenticate:false
+    }
+
+}
+
+export default ApiRoutes
