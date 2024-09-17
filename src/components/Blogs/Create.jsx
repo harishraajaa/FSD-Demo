@@ -62,9 +62,9 @@ function CreateBlog() {
 
   return <>
     <TopBar/>
-    <Container fluid>
+    <Container>
       <Row>
-        <Col>
+        <Col className='dispin'>
           <Form>
             <Form.Group className="mb-3">
               <Form.Label>Title</Form.Label>
@@ -85,7 +85,7 @@ function CreateBlog() {
             </Button>
           </Form>
         </Col>
-        <Col><BlogCard data={{title,image,description}}/></Col>
+        <Col className='dispblog'><BlogCard data={{title,image,description}}/></Col>
       </Row>
     </Container>
   </>

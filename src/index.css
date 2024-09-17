@@ -1,6 +1,23 @@
 .login-wrapper{
-  margin:20px auto 20px auto;
+  margin:20px auto auto;
   width: 35%;
+  margin-top: 200px;
+  margin-left: 850px;
+}
+
+.bg{
+  background-image: url('https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=750&h=550&dpr=2');
+}
+
+.dispblog{
+  margin-left: 200px;
+
+}
+
+.dispin{
+  margin-top: 50px;
+  margin-left: 50px;
+
 }
 
 .text-align-center{

@@ -6,7 +6,7 @@ import PlaceHolderImage from '../../assets/placeholder-image.jpg'
 function BlogCard({data={},handleLike=null}) {
   let id = sessionStorage.getItem("id")
   return <div className='blogs-children'> 
-    <Card style={{ width: '30rem' }}>
+    <Card style={{ width: '30rem'}}>
       <Card.Img variant="top" src={data.image ?? PlaceHolderImage} />
       <Card.Body>
         <Card.Title>{data.title ?? "Blog Title"}</Card.Title>
