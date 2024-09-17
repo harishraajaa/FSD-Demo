@@ -4,7 +4,7 @@ export const ROLE_ENUM = {
 }
 
 export const BLOG_STATUS_ENUM = {
-    PENDING:"pending",
-    APPROVED:"approved",
-    REJECTED:"rejected"
+    PENDING:"Pending",
+    APPROVED:"Approved",
+    REJECTED:"Rejected"
 }

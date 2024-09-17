@@ -27,7 +27,7 @@ const sendEmail=async(user,token,hostname)=>{
           })
       
            await transporter.sendMail({
-            from: '"Harish URL Shortner" <Notifications@harishfoods.com>', // sender address
+            from: '"Harish Blogs" <Notifications@harishfoods.com>', // sender address
             to: `${user.email}`, // list of receivers
             subject: "Password Reset Link", // Subject line
             text: "Hello world?", // plain text body
@@ -56,7 +56,7 @@ const sendEmailActivationLink=async(newUser,hostname)=>{
           })
 
            await transporter.sendMail({
-            from: '"Harish URL Shortner" <Notifications@harishfoods.com>', // sender address
+            from: '"Harish Blogs" <Notifications@harishfoods.com>', // sender address
             to: `${newUser.email}`, // list of receivers
             subject: "Account Activation Link", // Subject line
             text: "Hello world?", // plain text body
