@@ -93,7 +93,7 @@ function MyBlogs() {
       render:(e)=>{
         return <div>
           {
-            ["Approved","Pending","Rejected"].filter(status=>e.status!=status).map((s,i)=>{
+            ["Approved","Pending","Rejected"].filter(status=>e.status!=status).map((s,i)=>{ 
               return <>
                 <Button onClick={()=>handleStatusChange(s.toUpperCase(),e.id)}>{s}</Button>
                 &nbsp;
