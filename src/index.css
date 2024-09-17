@@ -1,12 +1,14 @@
 .login-wrapper{
   margin:20px auto auto;
   width: 35%;
-  margin-top: 200px;
-  margin-left: 850px;
+  /* margin-top: 200px;
+  margin-left: 650px; */
 }
 
 .bg{
-  background-image: url('https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=750&h=550&dpr=2');
+  background-image: url('https://images.pexels.com/photos/1084510/pexels-photo-1084510.jpeg?auto=compress&cs=tinysrgb&w=auto&h=1050');
+  /* ?auto=compress&cs=tinysrgb&w=550&h=550&dpr=2 */
+  /* https://images.pexels.com/photos/945453/pexels-photo-945453.jpeg */
 }
 
 .dispblog{
