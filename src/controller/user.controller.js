@@ -296,16 +296,23 @@ const forgetPassword=async(request,response)=>{
         let hostname=request.headers.origin ?? 'http://localhost:8000'
         let user=await userModel.findOne({email:email})
         if (user){            
-            const token = auth.createToken({
-                email:user.email,
-                name:user.name,
-                role:user.role,
-                id:user.id
-            })
-            sendEmail(user,token,hostname)
-            response.status(201).send({
-                message:"Link Created!!!",
-            })
+            if(user.status){
+                const token = auth.createToken({
+                    email:user.email,
+                    name:user.name,
+                    role:user.role,
+                    id:user.id
+                })
+                sendEmail(user,token,hostname)
+                response.status(201).send({
+                    message:"Link Created!!!",
+                })
+            }
+            else{
+                response.status(400).send({
+                    message:"User Account is not Activated!!!"
+                })
+            }
         }
         else{
             response.status(400).send({
